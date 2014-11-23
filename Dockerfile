@@ -1,7 +1,6 @@
-# Pull base image.
 FROM dockerfile/ruby
 
-MAINTAINER Tyler Payne
+MAINTAINER "Tyler Payne" <tyler43636@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
