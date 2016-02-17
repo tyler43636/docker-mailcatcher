@@ -1,11 +1,11 @@
-FROM dockerfile/ruby
+FROM ruby:2.3
 
 MAINTAINER "Tyler Payne" <tyler43636@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN sudo apt-get update && \ 
-    sudo apt-get install -y libsqlite3-dev && \
+RUN apt-get update && \
+    apt-get install -y libsqlite3-dev && \
     gem install mailcatcher --no-rdoc --no-ri
 
 EXPOSE 1025
